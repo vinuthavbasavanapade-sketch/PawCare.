@@ -1,0 +1,121 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e9;
+    color: #444;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    background-color: #e76f51;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+h2 {
+    color: #2a9d8f;
+}
+
+h3 {
+    color: #e76f51;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+img {
+    width: 300px;
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px #999;
+}
+
+header {
+    background-color: #f4a261;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+header h2 {
+    color: white;
+    margin: 0 0 10px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+button {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e76f51;
+}
+footer {
+    background-color: #264653;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.services {
+    background-color: #fff0e0;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.services h3 {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 12px 0;
+}
+
+/* Make PawCare mobile-friendly */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    img {
+        width: 250px;
+        max-width: 100%;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

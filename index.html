@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawCare Dog Website</title>
+    
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<header>
+    <h2>🐾 PawCare</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#care">Dog Care</a>
+        <a href="#tips">Tips</a>
+    </nav>
+</header>
+
+    <h1 id="home">🐶 Welcome to PawCare!</h1>
+    <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=600"
+     alt="Happy golden retriever"
+     width="300">
+    <button onclick="document.getElementById('care').scrollIntoView({behavior:'smooth'});">
+    Learn More About Dog Care
+</button>
+    <h2>Love Your Dog, Care Every Day</h2>
+    <p>Learn how to keep your dog happy and healthy.</p>
+
+    <h2 id="care">Our Dog Care Tips</h2>
+    <h2 id="tips">Daily Dog Care Tips 🐶</h2>
+    <input type="text" id="tipSearch" placeholder="Search dog-care tips..."></input>
+<p>Feed your dog healthy food, give fresh water, and take your dog for a daily walk.</p>
+    <h3>🥗 Healthy Food</h3>
+    <p>Give your dog healthy food and fresh water.</p>
+
+    <h3>🛁 Grooming</h3>
+    <p>Keep your dog's coat clean and brushed.</p>
+
+    <h3>🐾 Exercise</h3>
+    <p>Take your dog for walks and play every day.</p>
+<h2>About PawCare 🐾</h2>
+<p>PawCare helps you keep your dogs happy, healthy, and safe every day.</p>
+<h2>Contact Us 📩</h2>
+<p>Have questions about dog care? Contact us!</p>
+<p>Email: pawcare@example.com</p>
+<footer>
+    <p>© 2026 PawCare | Made with ❤️ for dogs</p>
+</footer>
+<h2>Our Services 🐾</h2>
+
+<div class="services">
+    <h3>🐶 Dog Grooming</h3>
+    <p>Keep your dog clean and comfortable.</p>
+
+    <h3>🥣 Healthy Food</h3>
+    <p>Learn about healthy food for your dog.</p>
+
+    <h3>🚶 Daily Walking</h3>
+    <p>Help your dog stay active and healthy.</p>
+</div>
+<h2>My Daily Dog Care Checklist 🐾</h2>
+
+<label>
+    <input type="checkbox"> Give fresh water
+</label>
+<br><br>
+
+<label>
+    <input type="checkbox"> Feed healthy food
+</label>
+<br><br>
+
+<label>
+    <input type="checkbox"> Take a daily walk
+</label>
+<br><br>
+
+<label>
+    <input type="checkbox"> Brush your dog
+</label>
+<script>
+const searchBox = document.getElementById("tipSearch");
+
+searchBox.addEventListener("input", function() {
+    const searchText = searchBox.value.toLowerCase();
+    const tips = document.querySelectorAll("#tips ~ p");
+
+    tips.forEach(function(tip) {
+        tip.style.display = tip.textContent.toLowerCase().includes(searchText)
+            ? "block"
+            : "none";
+    });
+});
+</script>
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    ⬆ Back to Top
+</button>
+</body>
+</html>
